@@ -1,11 +1,12 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<div class = "display"><span class = "digit" id = "display">0</span></div>
+<body>
+  <div class = "display"><span class = "digit" id = "display">0</span></div>
 <br>
 <div class = "checkoutbutton calc-col"><span class ="digit">AC</span></div>
-<div class = "checkoutbutton calc-col"><span class ="digit">CE</span></div>
-<div class = "checkoutbutton calc-col"><span class ="digit">%</span></div>
+<div class = "checkoutbutton calc-col" onclick = "clearDisplay()"><span class ="digit">CE</span></div>
+<div class = "checkoutbutton calc-col" onclick = "operationClicked('%')"><span class ="digit">%</span></div>
 <div class = "checkoutbutton calc-col" onclick = "operationClicked('/')"><span class ="digit">/</span></div>
 <br>
 <br>
@@ -31,4 +32,7 @@
 <div class = "checkoutbutton calc-col" onclick = "dotClicked()"><span class ="digit">.</span></div>
 <div class = "checkoutbutton calc-col" onclick = "operationClicked('=')"><span class ="digit">=</span></div>
 
+<!-- End of the real body -->
 <script src= "main.js"> </script>
+
+</body>
